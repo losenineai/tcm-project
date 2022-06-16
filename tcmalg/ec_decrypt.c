@@ -7,11 +7,11 @@ comment :国标算法
 
 #include <string.h>
 #include <malloc.h>
-#include "../openssl/bn.h"
-#include "../openssl/bnEx.h"
-#include "../openssl/crypto.h"
-#include "../openssl/ec_operations.h"
-#include "../openssl/ossl_typ.h"
+#include "bn.h"
+#include "bnEx.h"
+#include "crypto.h"
+#include "ec_operations.h"
+#include "ossl_typ.h"
 #include "tcm_bn.h"
 #include "debug.h"
 #include "tcm_hash.h"

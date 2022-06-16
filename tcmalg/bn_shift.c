@@ -1,8 +1,8 @@
 /* bn_shift.c */
 
 //#include <stdio.h>
-#include "../openssl/cryptlib.h"
-#include "../openssl/bn_lcl.h"
+#include "cryptlib.h"
+#include "bn_lcl.h"
 
 int BN_lshift1(BIGNUM *r, const BIGNUM *a)
 {

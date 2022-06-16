@@ -5,9 +5,9 @@ Date	:12/23/2006
 Comment :用于测试firmware的密钥协商功能
 ******************************************/
 
-#include "../openssl/bn.h"
-#include "../openssl/ec_operations.h"
-#include "../openssl/crypto.h"
+#include "bn.h"
+#include "ec_operations.h"
+#include "crypto.h"
 #include "tcm_ecc.h"
 #include "tcm_hash.h"
 #include "tcm_bn.h"

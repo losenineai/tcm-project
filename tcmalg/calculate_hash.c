@@ -7,10 +7,10 @@ comment :国标算法
 
 #include <stdlib.h>
 #include <string.h>
-#include "../openssl/bn.h"
-#include "../openssl/bnEx.h"
-#include "../openssl/crypto.h"
-#include "../openssl/ossl_typ.h"
+#include "bn.h"
+#include "bnEx.h"
+#include "crypto.h"
+#include "ossl_typ.h"
 #include "tcm_hash.h"
 #include "tcm_bn.h"
 

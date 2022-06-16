@@ -6,12 +6,12 @@ Date    :11/21/2006
 #include <malloc.h>
 #include <string.h>
 
-#include "../openssl/cryptlib.h"
-#include "../openssl/bn_lcl.h"
-#include "../openssl/bn.h"
-#include "../openssl/bnEx.h"
-#include "../openssl/ec_operations.h"
-#include "../openssl/crypto.h"
+#include "cryptlib.h"
+#include "bn_lcl.h"
+#include "bn.h"
+#include "bnEx.h"
+#include "ec_operations.h"
+#include "crypto.h"
 
 #include "tcm_ecc.h"
 #include "common.h"

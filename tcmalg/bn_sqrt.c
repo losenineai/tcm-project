@@ -5,8 +5,8 @@ Date	:11/21/2006
 comment :使用了自定义的伪随机数算法
 ******************************************/
 
-#include "../openssl/cryptlib.h"
-#include "../openssl/bn_lcl.h"
+#include "cryptlib.h"
+#include "bn_lcl.h"
 #include "tcm_rand.h"
 	
 BIGNUM *BN_mod_sqrt(BIGNUM *in, const BIGNUM *a, const BIGNUM *p, BN_CTX *ctx) 

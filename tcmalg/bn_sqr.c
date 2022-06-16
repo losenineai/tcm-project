@@ -1,8 +1,8 @@
 /* bn_sqr.c */
 
 //#include <stdio.h>
-#include "../openssl/cryptlib.h"
-#include "../openssl/bn_lcl.h"
+#include "cryptlib.h"
+#include "bn_lcl.h"
 
 /* r must not be a */
 /* I've just gone over this and it is now %20 faster on x86 - eay - 27 Jun 96 */

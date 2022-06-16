@@ -4,10 +4,10 @@ Author	:linyang
 Date	:11/21/2006
 ******************************************/
 
-#include "../openssl/bn.h"
-#include "../openssl/bnEx.h"
-#include "../openssl/ec_operations.h"
-#include "../openssl/crypto.h"
+#include "bn.h"
+#include "bnEx.h"
+#include "ec_operations.h"
+#include "crypto.h"
 #include "tcm_ecc.h"
 #include "tcm_bn.h"
 #include <malloc.h>

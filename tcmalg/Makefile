@@ -33,30 +33,28 @@ OBJECTS = bn_add.o \
 		ec_verify.o \
 		mem.o \
 		sch.o \
-		seal.o \
 		SMS4.o \
-		tcm_bn.o \
 		tcm_ecc.o \
 		tcm_ecc_exchange.o \
 		tcm_hash.o \
 		tcm_rand.o \
-		tcm_sms4.o
+		tcm_sms4.o \
+		tcm_bn.o \
+		seal.o
 
 all: $(TCMALG_SO)
 
 $(TCMALG_SO): $(OBJECTS)
-	$(CC) -shared -o -fPIC -o $@ $^
+	$(CC) ${OBJECTS} ${FLAGS} ${INCLUDE} -shared -o ${TCMALG_SO} ${LIB}
 	cp $(TCMALG_SO) /usr/lib
 
-mem_clr.o: mem_clr.c
-	$(CC) -c mem_clr.c $(INCLUDE)
+.c.o:
+	$(CC) $(INCLUDE) $(CFLAGS) -c -o $@ $<
 
 seal.o: seal.c
-	$(CC) -c seal.c -fPIC -fno-builtin
-
-tcm_bn.o: tcm_bn.c
-	$(CC) -c tcm_bn.c $(INCLUDE)
+	$(CC) -c seal.c -fPIC -fno-builtin $(INCLUDE)
 
 .PHONY: clean
 clean:
-	rm -f *.o $(TCMALG_SO) /usr/lib/$(TCMALG_SO)
+	rm -f *.o $(TCMALG_SO)
+#	rm -f /usr/lib/$(TCMALG_SO)

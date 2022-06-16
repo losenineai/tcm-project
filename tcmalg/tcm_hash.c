@@ -6,7 +6,7 @@ Date	:11/21/2006
 
 #include <memory.h>
 #include <malloc.h>
-#include "../openssl/ec_operations.h"
+#include "ec_operations.h"
 #include "sch.h"
 #include "tcm_hash.h"
 

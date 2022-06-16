@@ -15,8 +15,8 @@
 //#include <stdio.h>
 //#include <ndis.h>
  
-#include "../openssl/cryptlib.h"
-#include "../openssl/bn_lcl.h"
+#include "cryptlib.h"
+#include "bn_lcl.h"
 
 
 const char *BN_version="Big Number" OPENSSL_VERSION_PTEXT;

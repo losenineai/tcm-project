@@ -1,6 +1,6 @@
-#include "../openssl/bn.h"
-#include "../openssl/bnEx.h"
-#include "../openssl/ossl_typ.h"
+#include "bn.h"
+#include "bnEx.h"
+#include "ossl_typ.h"
 #include "tcm_ecc.h"
 
 /* 椭圆曲线群group和基点G，全局变量 */

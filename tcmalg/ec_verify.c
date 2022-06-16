@@ -5,10 +5,10 @@ Date	:11/21/2006
 comment :国标算法
 ******************************************/
 
-#include "../openssl/bn.h"
-#include "../openssl/bnEx.h"
-#include "../openssl/crypto.h"
-#include "../openssl/ec_operations.h"
+#include "bn.h"
+#include "bnEx.h"
+#include "crypto.h"
+#include "ec_operations.h"
 #include <malloc.h>
 
 /*

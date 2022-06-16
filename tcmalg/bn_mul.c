@@ -1,8 +1,8 @@
 /* bn_mul.c */
 
 //#include <stdio.h>
-#include "../openssl/cryptlib.h"
-#include "../openssl/bn_lcl.h"
+#include "cryptlib.h"
+#include "bn_lcl.h"
 
 #ifdef BN_RECURSION
 /* Karatsuba recursive multiplication algorithm

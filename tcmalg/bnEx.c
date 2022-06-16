@@ -2,7 +2,7 @@
 Module Name:Extended bn operations.
 
 **************************************************************/
-#include "../openssl/bnEx.h"
+#include "bnEx.h"
 
 /* 用扩展欧几里德算法求d=g/h mod m */
 int BN_div_mod(BIGNUM *d,const BIGNUM *g, const BIGNUM *h,const BIGNUM *m)

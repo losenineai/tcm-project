@@ -53,7 +53,7 @@
  *
  */
 
-#include "../openssl/bn_lcl.h"
+#include "bn_lcl.h"
 
 
 /* least significant word */

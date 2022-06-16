@@ -1,8 +1,8 @@
 /* bn_print.c */
 
 //#include <stdio.h>
-#include "../openssl/cryptlib.h"
-#include "../openssl/bn_lcl.h"
+#include "cryptlib.h"
+#include "bn_lcl.h"
 
 static const char *Hex="0123456789ABCDEF";
 

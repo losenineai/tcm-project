@@ -5,7 +5,7 @@ Date    :11/21/2006
 ******************************************/
 #include <stdlib.h>
 
-#include "../openssl/ec_operations.h"
+#include "ec_operations.h"
 #include "tcm_hash.h"
 
 static void sch_starts(sch_context *ctx)

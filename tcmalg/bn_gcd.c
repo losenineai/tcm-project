@@ -1,7 +1,7 @@
 /* bn_gcd.c */
 
-#include "../openssl/cryptlib.h"
-#include "../openssl/bn_lcl.h"
+#include "cryptlib.h"
+#include "bn_lcl.h"
 
 /* solves ax == 1 (mod n) */
 BIGNUM *BN_mod_inverse(BIGNUM *in,

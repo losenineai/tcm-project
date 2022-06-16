@@ -1,8 +1,8 @@
 /* bn_add.c */
 
 #include <stdio.h>
-#include "../openssl/cryptlib.h"
-#include "../openssl/bn_lcl.h"
+#include "cryptlib.h"
+#include "bn_lcl.h"
 
 /* r can == a or b */
 int BN_add(BIGNUM *r, const BIGNUM *a, const BIGNUM *b)

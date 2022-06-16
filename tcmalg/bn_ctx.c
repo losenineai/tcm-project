@@ -8,8 +8,8 @@
 //#include <stdio.h>
 #include <assert.h>
 
-#include "../openssl/cryptlib.h"
-#include "../openssl/bn_lcl.h"
+#include "cryptlib.h"
+#include "bn_lcl.h"
 
 BN_CTX *BN_CTX_new(void)
 {

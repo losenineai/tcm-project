@@ -5,9 +5,9 @@ Date	:11/21/2006
 comment :国标算法
 ******************************************/
 
-#include "../openssl/bn.h"
-#include "../openssl/bnEx.h"
-#include "../openssl/crypto.h"
+#include "bn.h"
+#include "bnEx.h"
+#include "crypto.h"
 #include "tcm_rand.h"
 #include "debug.h"
 #include "tcm_hash.h"

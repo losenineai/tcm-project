@@ -6,10 +6,10 @@ Purpose:椭圆曲线的基本操作，及签名验证，加解密算法
 全部采用仿射坐标实现。
 ************************************************************/
 
-#include "../openssl/bn.h"
-#include "../openssl/bnEx.h"
-#include "../openssl/crypto.h"
-#include "../openssl/ossl_typ.h"
+#include "bn.h"
+#include "bnEx.h"
+#include "crypto.h"
+#include "ossl_typ.h"
 
 #include <time.h>
 

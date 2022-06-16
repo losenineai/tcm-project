@@ -6,8 +6,8 @@ Date	:11/21/2006
 
 #include <stdio.h>
 #include <time.h>
-#include "../openssl/cryptlib.h"
-#include "../openssl/bn_lcl.h"
+#include "cryptlib.h"
+#include "bn_lcl.h"
 #include "tcm_rand.h"
 
 int tcm_bn_pseudo_rand(BIGNUM *rnd, int bits)

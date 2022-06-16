@@ -1,7 +1,7 @@
 /* seal.c - SEAL encryption algorithm */
 //#include "openssl/seal.h"
-#include "../openssl/ec_operations.h"
-#include "../openssl/ossl_typ.h"
+#include "ec_operations.h"
+#include "ossl_typ.h"
 //#include <ntddk.h>
 #include <memory.h>
 #include <stdlib.h>
