@@ -1,9 +1,11 @@
 CC      = gcc
+AR      = ar
 FLAGS   = -fPIC -D_REENTRANT
 CFLAGS  = -g -O2 -Werror -fno-strict-aliasing -shared -fPIC
 INCLUDE = -I../openssl
 
 TCMALG_SO = libtcmalg.so
+TCMALG_LIB = libtcmalg.a
 
 OBJECTS = bn_add.o \
 		bn_asm.o \
@@ -42,11 +44,14 @@ OBJECTS = bn_add.o \
 		tcm_bn.o \
 		seal.o
 
-all: $(TCMALG_SO)
+all: $(TCMALG_SO) $(TCMALG_LIB)
 
 $(TCMALG_SO): $(OBJECTS)
 	$(CC) ${OBJECTS} ${FLAGS} ${INCLUDE} -shared -o ${TCMALG_SO} ${LIB}
-	cp $(TCMALG_SO) /usr/lib
+#	cp $(TCMALG_SO) /usr/lib
+
+$(TCMALG_LIB): $(OBJECTS)
+	$(AR) -r $@ $^
 
 .c.o:
 	$(CC) $(INCLUDE) $(CFLAGS) -c -o $@ $<
@@ -56,5 +61,5 @@ seal.o: seal.c
 
 .PHONY: clean
 clean:
-	rm -f *.o $(TCMALG_SO)
+	rm -f *.o $(TCMALG_SO) $(TCMALG_LIB)
 #	rm -f /usr/lib/$(TCMALG_SO)
