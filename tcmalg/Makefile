@@ -48,7 +48,7 @@ all: $(TCMALG_SO) $(TCMALG_LIB)
 
 $(TCMALG_SO): $(OBJECTS)
 	$(CC) ${OBJECTS} ${FLAGS} ${INCLUDE} -shared -o ${TCMALG_SO} ${LIB}
-#	cp $(TCMALG_SO) /usr/lib
+	cp $(TCMALG_SO) /usr/lib
 
 $(TCMALG_LIB): $(OBJECTS)
 	$(AR) -r $@ $^
@@ -62,4 +62,4 @@ seal.o: seal.c
 .PHONY: clean
 clean:
 	rm -f *.o $(TCMALG_SO) $(TCMALG_LIB)
-#	rm -f /usr/lib/$(TCMALG_SO)
+	rm -f /usr/lib/$(TCMALG_SO)

@@ -1,3 +1,6 @@
+/*
+  该程序主要用于设备触发GPIO来自动烧录信息到TPCM模块NV空间
+*/
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>

@@ -1,3 +1,6 @@
+/*
+  该程序主要用于测试TPCM各项功能接口
+*/
 #include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
