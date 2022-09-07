@@ -20,7 +20,7 @@ extern int g_iDisplayFlag;   //=0,display,    =1,not dispaly
 #else
 // orangepi SPI参数
 // orangepi官方文档中显示SPI总线频率为65MHZ
-#define SPI_BUS_FREQ     10000000
+#define SPI_BUS_FREQ     65000000
 #define SPI_DEV1_NAME    "/dev/spidev1.1"
 #endif
 
